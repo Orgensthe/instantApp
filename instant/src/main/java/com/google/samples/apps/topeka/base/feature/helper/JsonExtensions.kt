@@ -1,11 +1,11 @@
 /*
- * Copyright 2015 Google Inc.
+ * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ *     http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,5 +14,16 @@
  * limitations under the License.
  */
 
+package com.google.samples.apps.topeka.instant.helper
 
-include ':app', ':base', ':instant', ':instantapp'
+import org.json.JSONArray
+
+/**
+ * Make an [Array] of type [String] out of this JSONArray.
+ */
+fun JSONArray.toStringArray(): Array<String> = Array(this.length()) { this.getString(it) }
+
+/**
+ * Make an [IntArray] out of this JSONArray.
+ */
+fun JSONArray.toIntArray(): IntArray = IntArray(this.length()) { this.getInt(it) }
