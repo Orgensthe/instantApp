@@ -27,6 +27,17 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:$supportLibVersion"
+    application project(':app')
+
+    // ... project associations should be api
+    api "com.android.support:appcompat-v7:$supportLibVersion"
+    api "com.android.support:design:$supportLibVersion"
+    api "com.android.support:support-v4:$supportLibVersion"
+    api 'com.google.android.instantapps:instantapps:1.1.0'
+    api "com.android.support.test.espresso:espresso-idling-resource:$espressoVersion"
+    api "com.android.support.test.espresso:espresso-idling-resource:$espressoVersion"
+    api "com.google.android.gms:play-services-auth:$playServicesAuthVersion"
 
     feature project(":instant")
 }

@@ -17,7 +17,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Exists for inheritance purposes -->
-    <style name="Topeka.Base" parent="Topeka" />
+
 
     <style name="Topeka" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/topeka_primary</item>

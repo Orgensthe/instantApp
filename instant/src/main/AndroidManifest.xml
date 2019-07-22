@@ -27,7 +27,7 @@
                  android:label="Topeka.base.instant"
                  android:supportsRtl="false"
                  android:theme="@style/Topeka"
-                 tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+                 tools:ignore="s,UnusedAttribute">
 
         <activity android:name=".activity.SignInActivity"
                   android:theme="@style/Topeka.SignInActivity"
